@@ -5,6 +5,7 @@ $(document).ready(() => {
         icon_social_sec_2 = Array.from($("#sec-2 .icon-social img")),
         txt_social_sec_2 = $("#sec-2 .txt-social"),
         prg_social_sec_2 = $("#sec-2 .explain"),
+        box_sec_5 = [...$("#sec-5 .box .inner")],
         obj_social = [{
                 headSocial: "فيس بوك",
                 pragrapgh: "و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر ."
@@ -27,7 +28,8 @@ $(document).ready(() => {
                 `
             },
         ];
-    let mx_height = 0;
+    let mx_height = 0,
+        mx_height_2 = 0;
 
     /* Make background when scroll */
     $(window).on("scroll", () => {
@@ -58,26 +60,21 @@ $(document).ready(() => {
             }
             e_1.style.height = mx_height + "px";
         });
+        /* Make Height Equals Sec 5 */
+        box_sec_5.forEach(e_3 => {
+            if (e_3.offsetHeight > mx_height_2) {
+                mx_height_2 = e_3.offsetHeight;
+            }
+            e_3.style.minHeight = mx_height_2 + "px";
+        });
         /* Any img Not Draggable */
         $("img").each(() => {
             $("img").attr("draggable", false);
         });
+
     }
     /* When Hover and Click on icon Social*/
     icon_social_sec_2.forEach((e_2) => {
-        // /* Hover  */
-        // $(e_2).hover(() => {
-        //     $(e_2).parent().siblings().find("i").remove();
-        //     if (!$(e_2).prev().is("i")) {
-        //         $(e_2).parent(".icon-social").append(`<i class="fas fa-arrow-down light-arrow"></i>`);
-        //     } else {
-        //         $(e_2).parent().find("i").remove();
-        //     }
-
-        // }, () => {
-        //     $(e_2).parent().find("i").remove();
-        //     $(".fc").append(`<i class="fas fa-arrow-down light-arrow"></i>`);
-        // });
         /* Change Content When click on Social Icon */
         $(e_2).on("click", () => {
             /* ADD Arrow */
@@ -108,9 +105,6 @@ $(document).ready(() => {
         },
         // Responsive breakpoints   
         breakpoints: {
-
-
-            // when window width is <= 640px     
             768: {
                 slidesPerView: 1
             },
@@ -120,4 +114,9 @@ $(document).ready(() => {
 
         }
     });
+    /* Animation GSAP */
+
+    gsap.fromTo("h1.intro-head", { translateY: -90, opacity: 0 }, { ease: "bounce", translateY: 0, opacity: 1, duration: 2 });
+    gsap.fromTo(".an-g-1", { translateX: 90, opacity: 0 }, { delay: 2, translateX: 0, opacity: 1, duration: 2, stagger: 0.6 });
+    gsap.to("#svg-1", { duration: 2, translateX: 0, opacity: 1 });
 });
