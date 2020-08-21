@@ -119,4 +119,8 @@ $(document).ready(() => {
     gsap.fromTo("h1.intro-head", { translateY: -90, opacity: 0 }, { ease: "bounce", translateY: 0, opacity: 1, duration: 2 });
     gsap.fromTo(".an-g-1", { translateX: 90, opacity: 0 }, { delay: 2, translateX: 0, opacity: 1, duration: 2, stagger: 0.6 });
     gsap.to("#svg-1", { duration: 2, translateX: 0, opacity: 1 });
+    /* Collapse */
+    $('.comn-qst .card').collapse({
+        toggle: false
+    })
 });
