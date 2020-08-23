@@ -100,8 +100,6 @@ $(document).ready(() => {
     let swiper = new Swiper('.crs-1', {
         slidesPerView: 2,
         spaceBetween: 10,
-        loop: true,
-        loopFillGroupWithBlank: true,
         pagination: {
             el: '.crs-1 .swiper-pagination',
             clickable: true,
