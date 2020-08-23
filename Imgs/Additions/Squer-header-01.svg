@@ -5,8 +5,8 @@
 	 viewBox="0 0 319.1 328.1" enable-background="new 0 0 319.1 328.1" xml:space="preserve">
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="204.5105" y1="31.4605" x2="-114.558" y2="248.5738">
 	<stop  offset="3.884712e-002" style="stop-color:#99B898"/>
-	<stop  offset="0.2989" style="stop-color:#97B196"/>
-	<stop  offset="1" style="stop-color:#92A391"/>
+	<stop  offset="0.5399" style="stop-color:#8DA38C"/>
+	<stop  offset="1" style="stop-color:#859584"/>
 </linearGradient>
 <polygon fill="url(#SVGID_1_)" points="247.1,0 319.1,124.1 0,328.1 0,0 "/>
 </svg>

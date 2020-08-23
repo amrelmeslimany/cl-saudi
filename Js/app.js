@@ -6,6 +6,7 @@ $(document).ready(() => {
         txt_social_sec_2 = $("#sec-2 .txt-social"),
         prg_social_sec_2 = $("#sec-2 .explain"),
         box_sec_5 = [...$("#sec-5 .box .inner")],
+        form_login = $(".form-header"),
         obj_social = [{
                 headSocial: "فيس بوك",
                 pragrapgh: `أفضل منصة لبناء قاعدة جماهيرية من كافة أرجاء الوطن العربي ملايين الأشخاص يستخدموا الفيس بوك بشكل يومي
@@ -120,7 +121,6 @@ $(document).ready(() => {
     /* Animation GSAP */
 
     gsap.fromTo("h1.intro-head", { translateY: -90, opacity: 0 }, { ease: "bounce", translateY: 0, opacity: 1, duration: 2 });
-    gsap.fromTo(".an-g-1", { translateX: 90, opacity: 0 }, { delay: 2, translateX: 0, opacity: 1, duration: 2, stagger: 0.6 });
+    gsap.fromTo(".an-g-1", { translateX: 90, opacity: 0 }, { delay: 2, translateX: 0, opacity: 1, duration: 2, stagger: 0.2 });
     gsap.to("#svg-1", { duration: 2, translateX: 0, opacity: 1 });
-
 });
