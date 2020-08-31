@@ -20,7 +20,7 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#727a6f">
     <!-- Site Metas -->
-    <title>سعودى سيوبانل - طلبات جماعية</title>
+    <title>سعودى سيوبانل - سجل الطلبات</title>
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="fivicon-01.png" type="image/x-icon" />
@@ -132,12 +132,127 @@
     </nav>
     <!-- !NAVBAR -->
     <!-- Form for group orders -->
-    <section class="group-orders pt-5 pb-5 mt-5">
-        <div class="container text-right clearfix">
-            <button class="btn text-white ed-1 mb-4" style="cursor: default;">طلبات جماعية</button>
-            <p class="mb-4">طلب واحد بكل سطر حسب الصيغة</p>
-            <textarea name="numberofservice" class="mb-4 form-control" placeholder="رقم الخدمة  | الرابط | العدد المطلوب"></textarea>
-            <button type="button" class="btn ed-1 text-white float-right">ارسال</button>
+    <section class="history-orders pt-5 pb-5 mt-5 text-right">
+        <div class="container">
+            <!--Status of Orders -->
+            <div class="row mb-3">
+                <div class="col-sm-2">
+                    <div class="sts-part-1 mb-2">
+                        <h6 class="text-center text-sm-right"><strong>
+                            حالة الطلبات
+                        </strong></h6>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="sts-part-2 mb-2 d-flex justify-content-center align-items-center">
+                        <ul class="nav nav-pills pills-two  rtl-nav ">
+                            <li>
+                                <a href="#" class="badge">
+                                    <span class="badge badge-dot mr-4">
+                                       <span class="status">الكل</span>
+                                    <i class="fas fa-calendar  mr-2 fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="badge">
+                                    <span class="badge badge-dot mr-4">
+                                    <span class="status">في الانتظار</span>
+                                    <i class="fas fa-calendar  mr-2 fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="badge">
+                                    <span class="badge badge-dot mr-4">
+                                    <span class="status">قيد التنفيذ</span>
+                                    <i class="fas fa-calendar  mr-2 fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="badge" class="green">
+                                    <span class="badge badge-dot mr-4">
+                                 <span class="status">مكتمل</span>
+                                    <i class="fas fa-calendar  mr-2 fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="badge" class="yellow">
+                                    <span class="badge badge-dot mr-4">
+                                 <span class="status">مكتمل جزئي</span>
+                                    <i class="fas fa-calendar  mr-2 fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="badge" class="light-green">
+                                    <span class="badge badge-dot mr-4">
+                                    <span class="status">في المعالجة</span>
+                                    <i class="fas fa-calendar  mr-2 fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="badge" class="red">
+                                    <span class="badge badge-dot mr-4">
+                                 <span class="status">ملغي</span>
+                                    <i class="fas fa-calendar  mr-2 fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Search M orders -->
+            <div class="row mb-3">
+                <div class="col-sm-2">
+                    <div class="sts-part-1 mb-2">
+                        <h6 class="text-center text-sm-right"><strong>
+                           طلباتى
+                        </strong></h6>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="sts-part-2 mb-2">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control rounded-0" placeholder="بحث فى الطلبات" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-dark text-white" type="button" id="button-search"><i class="fas fa-search fa-sm"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List of Orders -->
+            <div class="list-of-orders">
+                <!-- top -->
+                <div class="buttons-list mb-3">
+                    <button type="button" class="btn btn-dark"><i class="fas fa-list ml-2"></i>قائمة</button>
+                    <a href="#" class="btn btn-outline-dark"><i class="fas fa-list ml-2"></i>شبكة</a>
+                </div>
+                <!-- Table -->
+                <div class="table-responsive mb-5">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">رقم الطلب</th>
+                                <th scope="col">الخدمة</th>
+                                <th scope="col">الرابط</th>
+                                <th scope="col">حالة الطلب</th>
+                                <th scope="col">الثمن</th>
+                                <th scope="col">العدد</th>
+                                <th scope="col">التاريخ</th>
+                                <th scope="col">الفاصيل</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Form for group orders -->
