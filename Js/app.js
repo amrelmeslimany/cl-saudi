@@ -7,6 +7,9 @@ $(document).ready(() => {
         prg_social_sec_2 = $("#sec-2 .explain"),
         box_sec_5 = [...$("#sec-5 .box .inner")],
         form_login = $(".form-header"),
+        link_logout = $(".logout"),
+        navbar_right_inner = $(".navbar-right"),
+        bar_list_inner = $(".open-list"),
         obj_social = [{
                 headSocial: "فيس بوك",
                 pragrapgh: `أفضل منصة لبناء قاعدة جماهيرية من كافة أرجاء الوطن العربي ملايين الأشخاص يستخدموا الفيس بوك بشكل يومي
@@ -121,4 +124,19 @@ $(document).ready(() => {
     gsap.fromTo("h1.intro-head", { translateY: -90, opacity: 0 }, { ease: "bounce", translateY: 0, opacity: 1, duration: 2 });
     gsap.fromTo(".an-g-1", { translateX: 90, opacity: 0 }, { delay: 2, translateX: 0, opacity: 1, duration: 2, stagger: 0.2 });
     gsap.to("#svg-1", { duration: 2, translateX: 0, opacity: 1 });
+    /* Open and Close Inner Sidebar inner pages */
+    bar_list_inner.on("click", () => {
+        navbar_right_inner.slideToggle(200);
+    });
+    /* When Click Submit  */
+    form_login.on("submit", (e) => {
+        e.preventDefault();
+        let page_navigate_to = "new-order.html";
+        location.pathname = page_navigate_to;
+    });
+    link_logout.on("click", (e) => {
+        e.preventDefault();
+        let page_navigate_to = "home.html";
+        location.pathname = page_navigate_to;
+    });
 });
