@@ -10,6 +10,11 @@ $(document).ready(() => {
         link_logout = $(".logout"),
         navbar_right_inner = $(".navbar-right"),
         bar_list_inner = $(".open-list"),
+        collapse_buttons_funds = Array.from($(".present-paying,.techinical-sup .button-present button")),
+        collapse_boxes_funds = $(".present-paying,.techinical-sup .collapse"),
+        form_support_select = $(".techinical-sup .form-support #subject"),
+        form_support_select_order = $(".techinical-sup .form-support .order"),
+        form_support_select_payment = $(".techinical-sup .form-support .payment"),
         obj_social = [{
                 headSocial: "فيس بوك",
                 pragrapgh: `أفضل منصة لبناء قاعدة جماهيرية من كافة أرجاء الوطن العربي ملايين الأشخاص يستخدموا الفيس بوك بشكل يومي
@@ -138,5 +143,32 @@ $(document).ready(() => {
         e.preventDefault();
         let page_navigate_to = "home.html";
         location.pathname = page_navigate_to;
+    });
+    /* Edit Collapsing */
+    collapse_buttons_funds.forEach((coll => {
+        coll.addEventListener("click", (e) => {
+            e.preventDefault();
+            // coll.siblings("buttons").removeClass("active");
+            let children_buttons = Array.from(coll.parentElement.children);
+            children_buttons.forEach(ch => {
+                ch.classList.remove("active")
+            })
+            e.target.classList.add("active");
+            collapse_boxes_funds.siblings(".collapse").removeClass("show");
+        })
+    }));
+    /* When Value of Select in Section of Tecchnical Support */
+    form_support_select.on("change", () => {
+        if (form_support_select.val() === "order") {
+            form_support_select_order.show(200);
+            form_support_select_payment.hide(100);
+        } else if (form_support_select.val() === "payment") {
+            form_support_select_order.hide(100);
+            form_support_select_payment.show(200);
+        } else if (form_support_select.val() === "other") {
+            form_support_select_order.hide(100);
+            form_support_select_payment.hide(100);
+        }
+
     });
 });
