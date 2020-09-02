@@ -10,8 +10,10 @@ $(document).ready(() => {
         link_logout = $(".logout"),
         navbar_right_inner = $(".navbar-right"),
         bar_list_inner = $(".open-list"),
-        collapse_buttons_funds = Array.from($(".present-paying,.techinical-sup .button-present button")),
-        collapse_boxes_funds = $(".present-paying,.techinical-sup .collapse"),
+        collapse_buttons_funds = Array.from($(".present-paying .button-present button")),
+        collapse_boxes_funds = $(".present-paying .collapse"),
+        collapse_boxes_funds_2 = $(".techinical-sup .tech-box  .collapse"),
+        collapse_buttons_funds_2 = Array.from($(".techinical-sup .tech-box  .button-present button")),
         form_support_select = $(".techinical-sup .form-support #subject"),
         form_support_select_order = $(".techinical-sup .form-support .order"),
         form_support_select_payment = $(".techinical-sup .form-support .payment"),
@@ -145,18 +147,37 @@ $(document).ready(() => {
         location.pathname = page_navigate_to;
     });
     /* Edit Collapsing */
-    collapse_buttons_funds.forEach((coll => {
-        coll.addEventListener("click", (e) => {
-            e.preventDefault();
-            // coll.siblings("buttons").removeClass("active");
-            let children_buttons = Array.from(coll.parentElement.children);
-            children_buttons.forEach(ch => {
-                ch.classList.remove("active")
+    // Add funds page
+    collapseEdit(collapse_buttons_funds, collapse_boxes_funds);
+    // Technical Page
+    collapseEdit(collapse_buttons_funds_2, collapse_boxes_funds_2);
+
+    function collapseEdit(buttons, boxes) {
+        buttons.forEach((coll => {
+            coll.addEventListener("click", (e) => {
+                e.preventDefault();
+                // coll.siblings("buttons").removeClass("active");
+                let children_buttons = Array.from(coll.parentElement.children);
+                children_buttons.forEach(ch => {
+                    ch.classList.remove("active")
+                })
+                e.target.classList.add("active");
+                boxes.siblings(".collapse").removeClass("show");
             })
-            e.target.classList.add("active");
-            collapse_boxes_funds.siblings(".collapse").removeClass("show");
-        })
-    }));
+        }));
+        /* collapse_buttons_funds.forEach((coll => {
+            coll.addEventListener("click", (e) => {
+                e.preventDefault();
+                // coll.siblings("buttons").removeClass("active");
+                let children_buttons = Array.from(coll.parentElement.children);
+                children_buttons.forEach(ch => {
+                    ch.classList.remove("active")
+                })
+                e.target.classList.add("active");
+                collapse_boxes_funds.siblings(".collapse").removeClass("show");
+            })
+        })); */
+    }
     /* When Value of Select in Section of Tecchnical Support */
     form_support_select.on("change", () => {
         if (form_support_select.val() === "order") {
