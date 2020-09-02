@@ -17,6 +17,10 @@ $(document).ready(() => {
         form_support_select = $(".techinical-sup .form-support #subject"),
         form_support_select_order = $(".techinical-sup .form-support .order"),
         form_support_select_payment = $(".techinical-sup .form-support .payment"),
+        news_navbar = $(".nav-new"),
+        news_filter_list = [...$(".box-of-news .filter ul li")],
+        news_share_btn = $(".box-of-news .news .edit-js-share"),
+        news_inputs_opinion = $(".box-of-news .footer-post .opinion"),
         obj_social = [{
                 headSocial: "فيس بوك",
                 pragrapgh: `أفضل منصة لبناء قاعدة جماهيرية من كافة أرجاء الوطن العربي ملايين الأشخاص يستخدموا الفيس بوك بشكل يومي
@@ -63,6 +67,8 @@ $(document).ready(() => {
                 boxShadow: "none"
             });
         }
+        /* News NAVBAR */
+        changeNavNews();
     });
     /* Window Load */
     /* FNC For Height */
@@ -135,17 +141,6 @@ $(document).ready(() => {
     bar_list_inner.on("click", () => {
         navbar_right_inner.slideToggle(200);
     });
-    /* When Click Submit  */
-    form_login.on("submit", (e) => {
-        e.preventDefault();
-        let page_navigate_to = "new-order.html";
-        location.pathname = page_navigate_to;
-    });
-    link_logout.on("click", (e) => {
-        e.preventDefault();
-        let page_navigate_to = "home.html";
-        location.pathname = page_navigate_to;
-    });
     /* Edit Collapsing */
     // Add funds page
     collapseEdit(collapse_buttons_funds, collapse_boxes_funds);
@@ -165,18 +160,6 @@ $(document).ready(() => {
                 boxes.siblings(".collapse").removeClass("show");
             })
         }));
-        /* collapse_buttons_funds.forEach((coll => {
-            coll.addEventListener("click", (e) => {
-                e.preventDefault();
-                // coll.siblings("buttons").removeClass("active");
-                let children_buttons = Array.from(coll.parentElement.children);
-                children_buttons.forEach(ch => {
-                    ch.classList.remove("active")
-                })
-                e.target.classList.add("active");
-                collapse_boxes_funds.siblings(".collapse").removeClass("show");
-            })
-        })); */
     }
     /* When Value of Select in Section of Tecchnical Support */
     form_support_select.on("change", () => {
@@ -190,6 +173,66 @@ $(document).ready(() => {
             form_support_select_order.hide(100);
             form_support_select_payment.hide(100);
         }
-
     });
+    /* Open Icons Social When Click btn Share */
+    news_share_btn.each(function() {
+        /* news_box_social.slideToggle(200); */
+        $(this).on("click", function() {
+            $(this).next("ul").slideToggle(200);
+        });
+    });
+    /* Change NAVBAR FOR NEWS */
+    function changeNavNews() {
+        if ($(this).scrollTop() >= 25) {
+            /* CHANGE NAVBAR */
+            news_navbar.css({
+                paddingBottom: 0,
+                height: `45px`,
+                zIndex: 7,
+                maxHeight: "45px",
+                boxShadow: "rgb(34 34 34 / 22%) 0px 2px 5px"
+            }, 200);
+        } else if ($(this).scrollTop() <= 25) {
+            news_navbar.attr("style", "");
+            news_navbar.css({
+                paddingBottom: "100px",
+                height: `auto`,
+                maxHeight: `initial`,
+                zIndex: 5
+            });
+        }
+    }
+    /*  ADD Active Class on List of Filter */
+    news_filter_list.forEach(e_4 => {
+            e_4.addEventListener("click", () => {
+                let childs = [...e_4.parentElement.children];
+                childs.forEach(ch_2 => {
+                    ch_2.classList.remove("active");
+                });
+                e_4.classList.add("active");
+            });
+        })
+        /* Input Message For opinion */
+    news_inputs_opinion.each(function() {
+        $(this).on("keyup", (e) => {
+            e.stopPropagation();
+            if ($(this).val() !== "") {
+                $(this).parent().find(".like-unlike .fa-paper-plane").show(500);
+            } else {
+                $(this).parent().find(".like-unlike .fa-paper-plane").hide(500);
+            }
+        });
+        /* Full Like & Unlike */
+        $(this).parent().find(".like-unlike i").not(".fa-paper-plane").each(function() {
+            $(this).on("click", function() {
+                if ($(this).siblings().hasClass("act")) {
+                    $(this).siblings().removeClass("act");
+                    $(this).toggleClass("act");
+                } else {
+                    $(this).toggleClass("act");
+                }
+            });
+        });
+    });
+
 });
