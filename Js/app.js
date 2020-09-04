@@ -1,24 +1,24 @@
 $(document).ready(() => {
     /* variabls */
     const navbar_top = $(".navbar"),
-        card_sec_1 = Array.from($("#sec-1 .top .card")),
-        icon_social_sec_2 = Array.from($("#sec-2 .icon-social img")),
+        card_sec_1 = $("#sec-1 .top .card"),
+        icon_social_sec_2 = $("#sec-2 .icon-social img"),
         txt_social_sec_2 = $("#sec-2 .txt-social"),
         prg_social_sec_2 = $("#sec-2 .explain"),
-        box_sec_5 = [...$("#sec-5 .box .inner")],
+        box_sec_5 = $("#sec-5 .box .inner"),
         form_login = $(".form-header"),
         link_logout = $(".logout"),
         navbar_right_inner = $(".navbar-right"),
         bar_list_inner = $(".open-list"),
-        collapse_buttons_funds = Array.from($(".present-paying .button-present button")),
+        collapse_buttons_funds = $(".present-paying .button-present button"),
         collapse_boxes_funds = $(".present-paying .collapse"),
         collapse_boxes_funds_2 = $(".techinical-sup .tech-box  .collapse"),
-        collapse_buttons_funds_2 = Array.from($(".techinical-sup .tech-box  .button-present button")),
+        collapse_buttons_funds_2 = $(".techinical-sup .tech-box  .button-present button"),
         form_support_select = $(".techinical-sup .form-support #subject"),
         form_support_select_order = $(".techinical-sup .form-support .order"),
         form_support_select_payment = $(".techinical-sup .form-support .payment"),
         news_navbar = $(".nav-new"),
-        news_filter_list = [...$(".box-of-news .filter ul li")],
+        news_filter_list = $(".box-of-news .filter ul li"),
         news_share_btn = $(".box-of-news .news .edit-js-share"),
         news_inputs_opinion = $(".box-of-news .footer-post .opinion"),
         obj_social = [{
@@ -73,36 +73,40 @@ $(document).ready(() => {
     /* Window Load */
     /* FNC For Height */
     (function makeHeight() {
-        card_sec_1.forEach(e_1 => {
-            if (e_1.offsetHeight > mx_height) {
-                mx_height = e_1.offsetHeight;
+        card_sec_1.each(function() {
+            if ($(this).innerHeight() > mx_height) {
+                mx_height = $(this).innerHeight();
             }
-            e_1.style.height = mx_height + "px";
+            $(this).css({
+                height: mx_height + "px"
+            });
         });
         /* Make Height Equals Sec 5 */
-        box_sec_5.forEach(e_3 => {
-            if (e_3.offsetHeight > mx_height_2) {
-                mx_height_2 = e_3.offsetHeight;
+        box_sec_5.each(function() {
+            if ($(this).innerHeight() > mx_height_2) {
+                mx_height_2 = $(this).innerHeight();
             }
-            e_3.style.minHeight = mx_height_2 + "px";
+            $(this).css({
+                height: mx_height_2 + "px"
+            });
         });
         /* Any img Not Draggable */
-        $("img").each(() => {
-            $("img").attr("draggable", false);
+        $("img").each(function() {
+            $(this).attr("draggable", false);
         });
 
     }())
     /* When Hover and Click on icon Social*/
-    icon_social_sec_2.forEach((e_2) => {
+    icon_social_sec_2.each(function() {
         /* Change Content When click on Social Icon */
-        $(e_2).on("click", () => {
+        $(this).on("click", () => {
             /* ADD Arrow */
-            $(e_2).parent().siblings().find("i").remove();
-            $(e_2).parent().find("i").remove();
-            $(e_2).parent(".icon-social").append(`<i class="fas fa-arrow-down light-arrow"></i>`);
+            $(this).parent().siblings().find("i").remove();
+            $(this).parent().find("i").remove();
+            $(this).parent(".icon-social").append(`<i class="fas fa-arrow-down light-arrow"></i>`);
             /* Change Content */
             obj_social.forEach(e_obj_1 => {
-                if ($(e_2).attr("alt") === e_obj_1["headSocial"]) {
+                if ($(this).attr("alt") === e_obj_1["headSocial"]) {
                     txt_social_sec_2.html('');
                     txt_social_sec_2.html(e_obj_1["headSocial"]);
                     prg_social_sec_2.html('');
@@ -148,18 +152,18 @@ $(document).ready(() => {
     collapseEdit(collapse_buttons_funds_2, collapse_boxes_funds_2);
 
     function collapseEdit(buttons, boxes) {
-        buttons.forEach((coll => {
-            coll.addEventListener("click", (e) => {
+        buttons.each(function() {
+            $(this).on("click", (e) => {
                 e.preventDefault();
                 // coll.siblings("buttons").removeClass("active");
-                let children_buttons = Array.from(coll.parentElement.children);
-                children_buttons.forEach(ch => {
-                    ch.classList.remove("active")
+                let children_buttons = $(this).parent().children();
+                children_buttons.each(function() {
+                    $(this).removeClass("active")
                 })
                 e.target.classList.add("active");
                 boxes.siblings(".collapse").removeClass("show");
             })
-        }));
+        });
     }
     /* When Value of Select in Section of Tecchnical Support */
     form_support_select.on("change", () => {
@@ -203,17 +207,18 @@ $(document).ready(() => {
         }
     }
     /*  ADD Active Class on List of Filter */
-    news_filter_list.forEach(e_4 => {
-            e_4.addEventListener("click", () => {
-                let childs = [...e_4.parentElement.children];
-                childs.forEach(ch_2 => {
-                    ch_2.classList.remove("active");
+    news_filter_list.each(function() {
+            $(this).on("click", () => {
+                let childs = $(this).parent().children();
+                childs.each(function() {
+                    $(this).removeClass("active");
                 });
-                e_4.classList.add("active");
+                $(this).addClass("active");
             });
         })
         /* Input Message For opinion */
     news_inputs_opinion.each(function() {
+
         $(this).on("keyup", (e) => {
             e.stopPropagation();
             if ($(this).val() !== "") {
