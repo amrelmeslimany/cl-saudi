@@ -21,6 +21,7 @@ $(document).ready(() => {
         news_filter_list = $(".box-of-news .filter ul li"),
         news_share_btn = $(".box-of-news .news .edit-js-share"),
         news_inputs_opinion = $(".box-of-news .footer-post .opinion"),
+        all_inputs = $("input"),
         obj_social = [{
                 headSocial: "فيس بوك",
                 pragrapgh: `أفضل منصة لبناء قاعدة جماهيرية من كافة أرجاء الوطن العربي ملايين الأشخاص يستخدموا الفيس بوك بشكل يومي
@@ -208,15 +209,15 @@ $(document).ready(() => {
     }
     /*  ADD Active Class on List of Filter */
     news_filter_list.each(function() {
-            $(this).on("click", () => {
-                let childs = $(this).parent().children();
-                childs.each(function() {
-                    $(this).removeClass("active");
-                });
-                $(this).addClass("active");
+        $(this).on("click", () => {
+            let childs = $(this).parent().children();
+            childs.each(function() {
+                $(this).removeClass("active");
             });
-        })
-        /* Input Message For opinion */
+            $(this).addClass("active");
+        });
+    });
+    /* Input Message For opinion */
     news_inputs_opinion.each(function() {
 
         $(this).on("keyup", (e) => {
@@ -239,5 +240,4 @@ $(document).ready(() => {
             });
         });
     });
-
 });
