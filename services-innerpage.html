@@ -37,6 +37,13 @@
     <!-- Site CSS -->
     <link rel="stylesheet" href="Css/Style.css" />
 
+    <style>
+        body {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
     <!--[if lt IE 9]>
       <script src="Js/html5shiv.min.js"></script>
     <![endif]-->
@@ -140,167 +147,169 @@
                     ♛ متابعين انستقرام حقيقيين [ إعلانات ]
                 </h5>
                 <!-- TAble for services -->
-                <div class="table-responsive">
-                    <table class="table mb-4">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">رقم الخدمة</th>
-                                <th scope="col">الخدمة</th>
-                                <th scope="col">السعر لكل 1000</th>
-                                <th scope="col">الحد الادنى</th>
-                                <th scope="col">الحد الاعلي</th>
-                                <th scope="col">الوقت التقريبي</th>
-                                <th scope="col">وصف الخدمة</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-1">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-2">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-3">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-4">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-5">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
+                <div class="table-and-modals">
+                    <div class="table-responsive">
+                        <table class="table mb-4">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">رقم الخدمة</th>
+                                    <th scope="col">الخدمة</th>
+                                    <th scope="col">السعر لكل 1000</th>
+                                    <th scope="col">الحد الادنى</th>
+                                    <th scope="col">الحد الاعلي</th>
+                                    <th scope="col">الوقت التقريبي</th>
+                                    <th scope="col">وصف الخدمة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-1">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-2">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-3">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-4">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-5">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
 
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Modals For Buttons -->
-                <div class="modlas-for-services">
-                    <!-- Modal 1 -->
-                    <div class="modal fade" id="info-1" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-1Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Modals For Buttons -->
+                    <div class="modlas-for-services">
+                        <!-- Modal 1 -->
+                        <div class="modal fade" id="info-1" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-1Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 2 -->
-                    <div class="modal fade" id="info-2" data-backdrop="static" data-keyboard="false" aria-labelledby="info-2Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-2Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 2 -->
+                        <div class="modal fade" id="info-2" data-backdrop="static" data-keyboard="false" aria-labelledby="info-2Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-2Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>2 تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>2 تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 3 -->
-                    <div class="modal fade" id="info-3" data-backdrop="static" data-keyboard="false" aria-labelledby="info-3Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-3Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 3 -->
+                        <div class="modal fade" id="info-3" data-backdrop="static" data-keyboard="false" aria-labelledby="info-3Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-3Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 4 -->
-                    <div class="modal fade" id="info-4" data-backdrop="static" data-keyboard="false" aria-labelledby="info-4Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-4Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 4 -->
+                        <div class="modal fade" id="info-4" data-backdrop="static" data-keyboard="false" aria-labelledby="info-4Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-4Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 5 -->
-                    <div class="modal fade" id="info-5" data-backdrop="static" data-keyboard="false" aria-labelledby="info-5Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-5Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 5 -->
+                        <div class="modal fade" id="info-5" data-backdrop="static" data-keyboard="false" aria-labelledby="info-5Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-5Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -313,167 +322,170 @@
                     ♛ متابعين انستقرام حقيقيين [ إعلانات ]
                 </h5>
                 <!-- TAble for services -->
-                <div class="table-responsive">
-                    <table class="table mb-4">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">رقم الخدمة</th>
-                                <th scope="col">الخدمة</th>
-                                <th scope="col">السعر لكل 1000</th>
-                                <th scope="col">الحد الادنى</th>
-                                <th scope="col">الحد الاعلي</th>
-                                <th scope="col">الوقت التقريبي</th>
-                                <th scope="col">وصف الخدمة</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-1">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-2">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-3">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-4">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-5">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
 
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Modals For Buttons -->
-                <div class="modlas-for-services">
-                    <!-- Modal 1 -->
-                    <div class="modal fade" id="info-1" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-1Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                <div class="table-and-modals">
+                    <div class="table-responsive">
+                        <table class="table mb-4">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">رقم الخدمة</th>
+                                    <th scope="col">الخدمة</th>
+                                    <th scope="col">السعر لكل 1000</th>
+                                    <th scope="col">الحد الادنى</th>
+                                    <th scope="col">الحد الاعلي</th>
+                                    <th scope="col">الوقت التقريبي</th>
+                                    <th scope="col">وصف الخدمة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-1">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-2">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-3">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-4">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-5">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Modals For Buttons -->
+                    <div class="modlas-for-services">
+                        <!-- Modal 1 -->
+                        <div class="modal fade" id="info-1" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-1Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 2 -->
-                    <div class="modal fade" id="info-2" data-backdrop="static" data-keyboard="false" aria-labelledby="info-2Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-2Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>2 تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 3 -->
-                    <div class="modal fade" id="info-3" data-backdrop="static" data-keyboard="false" aria-labelledby="info-3Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-3Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                        <!-- Modal 2 -->
+                        <div class="modal fade" id="info-2" data-backdrop="static" data-keyboard="false" aria-labelledby="info-2Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-2Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>2 تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 4 -->
-                    <div class="modal fade" id="info-4" data-backdrop="static" data-keyboard="false" aria-labelledby="info-4Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-4Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                        <!-- Modal 3 -->
+                        <div class="modal fade" id="info-3" data-backdrop="static" data-keyboard="false" aria-labelledby="info-3Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-3Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 5 -->
-                    <div class="modal fade" id="info-5" data-backdrop="static" data-keyboard="false" aria-labelledby="info-5Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-5Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                        <!-- Modal 4 -->
+                        <div class="modal fade" id="info-4" data-backdrop="static" data-keyboard="false" aria-labelledby="info-4Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-4Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                            </div>
+                        </div>
+                        <!-- Modal 5 -->
+                        <div class="modal fade" id="info-5" data-backdrop="static" data-keyboard="false" aria-labelledby="info-5Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-5Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -486,167 +498,169 @@
                     ♛ متابعين انستقرام حقيقيين [ إعلانات ]
                 </h5>
                 <!-- TAble for services -->
-                <div class="table-responsive">
-                    <table class="table mb-4">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">رقم الخدمة</th>
-                                <th scope="col">الخدمة</th>
-                                <th scope="col">السعر لكل 1000</th>
-                                <th scope="col">الحد الادنى</th>
-                                <th scope="col">الحد الاعلي</th>
-                                <th scope="col">الوقت التقريبي</th>
-                                <th scope="col">وصف الخدمة</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-1">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-2">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-3">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-4">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
-                            <tr>
-                                <th scope="row">696</th>
-                                <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
-                                <td>18.13</td>
-                                <td>2000</td>
-                                <td>2000</td>
-                                <td>لايوجد معلومات كافية</td>
-                                <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-5">تفاصيل</button></td>
-                                <!-- Button trigger modal -->
-                            </tr>
+                <div class="table-and-modals">
+                    <div class="table-responsive">
+                        <table class="table mb-4">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">رقم الخدمة</th>
+                                    <th scope="col">الخدمة</th>
+                                    <th scope="col">السعر لكل 1000</th>
+                                    <th scope="col">الحد الادنى</th>
+                                    <th scope="col">الحد الاعلي</th>
+                                    <th scope="col">الوقت التقريبي</th>
+                                    <th scope="col">وصف الخدمة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-1">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-2">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-3">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-4">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
+                                <tr>
+                                    <th scope="row">696</th>
+                                    <td>انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</td>
+                                    <td>18.13</td>
+                                    <td>2000</td>
+                                    <td>2000</td>
+                                    <td>لايوجد معلومات كافية</td>
+                                    <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-5">تفاصيل</button></td>
+                                    <!-- Button trigger modal -->
+                                </tr>
 
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Modals For Buttons -->
-                <div class="modlas-for-services">
-                    <!-- Modal 1 -->
-                    <div class="modal fade" id="info-1" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-1Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Modals For Buttons -->
+                    <div class="modlas-for-services">
+                        <!-- Modal 1 -->
+                        <div class="modal fade" id="info-1" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-1Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 2 -->
-                    <div class="modal fade" id="info-2" data-backdrop="static" data-keyboard="false" aria-labelledby="info-2Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-2Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 2 -->
+                        <div class="modal fade" id="info-2" data-backdrop="static" data-keyboard="false" aria-labelledby="info-2Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-2Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>2 تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>2 تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 3 -->
-                    <div class="modal fade" id="info-3" data-backdrop="static" data-keyboard="false" aria-labelledby="info-3Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-3Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 3 -->
+                        <div class="modal fade" id="info-3" data-backdrop="static" data-keyboard="false" aria-labelledby="info-3Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-3Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 4 -->
-                    <div class="modal fade" id="info-4" data-backdrop="static" data-keyboard="false" aria-labelledby="info-4Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-4Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 4 -->
+                        <div class="modal fade" id="info-4" data-backdrop="static" data-keyboard="false" aria-labelledby="info-4Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-4Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Modal 5 -->
-                    <div class="modal fade" id="info-5" data-backdrop="static" data-keyboard="false" aria-labelledby="info-5Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h6 class="modal-title" id="info-5Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
-                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal 5 -->
+                        <div class="modal fade" id="info-5" data-backdrop="static" data-keyboard="false" aria-labelledby="info-5Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="info-5Label">انستقرام [ متابعين إعلانات ] [ عربي حقيقي ] [ 2k ]</h6>
+                                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>تفاصيل المنتج</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>تفاصيل المنتج</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
