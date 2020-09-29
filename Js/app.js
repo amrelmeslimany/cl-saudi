@@ -6,14 +6,14 @@ $(document).ready(() => {
         txt_social_sec_2 = $("#sec-2 .txt-social"),
         prg_social_sec_2 = $("#sec-2 .explain"),
         box_sec_5 = $("#sec-5 .box .inner"),
-        form_login = $(".form-header"),
-        link_logout = $(".logout"),
         navbar_right_inner = $(".navbar-right"),
         bar_list_inner = $(".open-list"),
         collapse_buttons_funds = $(".present-paying .button-present button"),
         collapse_boxes_funds = $(".present-paying .collapse"),
         collapse_boxes_funds_2 = $(".techinical-sup .tech-box  .collapse"),
         collapse_buttons_funds_2 = $(".techinical-sup .tech-box  .button-present button"),
+        collapse_buttons_funds_3 = $(".history-orders .list-of-orders  .buttons-list button"),
+        collapse_boxes_funds_3 = $(".history-orders .list-of-orders .collection-collapse .collapse"),
         form_support_select = $(".techinical-sup .form-support #subject"),
         form_support_select_order = $(".techinical-sup .form-support .order"),
         form_support_select_payment = $(".techinical-sup .form-support .payment"),
@@ -150,6 +150,8 @@ $(document).ready(() => {
     collapseEdit(collapse_buttons_funds, collapse_boxes_funds);
     // Technical Page
     collapseEdit(collapse_buttons_funds_2, collapse_boxes_funds_2);
+    // History Page
+    collapseEdit(collapse_buttons_funds_3, collapse_boxes_funds_3);
 
     function collapseEdit(buttons, boxes) {
         buttons.each(function() {

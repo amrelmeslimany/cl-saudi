@@ -233,26 +233,711 @@
             <div class="list-of-orders">
                 <!-- top -->
                 <div class="buttons-list mb-3">
-                    <button type="button" class="btn btn-dark"><i class="fas fa-list ml-2"></i>قائمة</button>
-                    <a href="#" class="btn btn-outline-dark"><i class="fas fa-th ml-2"></i>شبكة</a>
+                    <button class="btn btn-outline-dark active" type="button" data-toggle="collapse" data-target="#prese-1" aria-controls="prese-1">
+                        <i class="fas fa-list ml-2"></i>قائمة
+                    </button>
+                    <button class="btn btn-outline-dark rounded-0" type="button" data-toggle="collapse" data-target="#prese-2" aria-controls="prese-1">
+                        <i class="fas fa-th ml-2"></i>شبكة
+                  </button>
                 </div>
-                <!-- Table -->
-                <div class="table-responsive mb-5">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col"><i class="fas fa-list-ol  ml-2"></i>رقم الطلب</th>
-                                <th scope="col"><i class="fas fa-list-ul  ml-2  "></i>الخدمة</th>
-                                <th scope="col"><i class="fas fa-link  ml-2"></i>الرابط</th>
-                                <th scope="col"><i class="fas fa-question ml-2"></i>حالة الطلب</th>
-                                <th scope="col"><i class="fas fa-money-bill-wave-alt  ml-2"></i>الثمن</th>
-                                <th scope="col"><i class="fas fa-arrow-up ml-2"></i>العدد</th>
-                                <th scope="col"><i class="fas fa-history ml-2 "></i>التاريخ</th>
-                                <th scope="col"><i class="fas fa-align-left ml-2 "></i>التفاصيل</th>
-                            </tr>
-                        </thead>
-                    </table>
+                <!-- Switch Between List And Table -->
+                <div class="collection-collapse">
+                    <!-- 1 collapse -->
+                    <div class="collapse show" id="prese-1">
+                        <!-- Table -->
+                        <div class="table-responsive mb-5">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col"><i class="fas fa-list-ol  ml-2"></i>رقم الطلب</th>
+                                        <th scope="col"><i class="fas fa-list-ul  ml-2  "></i>الخدمة</th>
+                                        <th scope="col"><i class="fas fa-link  ml-2"></i>الرابط</th>
+                                        <th scope="col"><i class="fas fa-question ml-2"></i>حالة الطلب</th>
+                                        <th scope="col"><i class="fas fa-money-bill-wave-alt  ml-2"></i>الثمن</th>
+                                        <th scope="col"><i class="fas fa-arrow-up ml-2"></i>العدد</th>
+                                        <th scope="col"><i class="fas fa-history ml-2 "></i>التاريخ</th>
+                                        <th scope="col"><i class="fas fa-align-left ml-2 "></i>التفاصيل</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 1 Col -->
+                                    <tr>
+                                        <th>
+                                            <h6>427825</h6>
+                                        </th>
+                                        <td>
+                                            <h6>انستقرام [ مشاهدات ] [ خدمة حصرية ]</h6>
+                                        </td>
+                                        <td>
+                                            <h6><a href="https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz" class="badge"><i class="fas fa-link ml-2"></i>لزيارة الرابط</a></h6>
+                                        </td>
+                                        <td>
+                                            <h6>مكتمل</h6>
+                                        </td>
+                                        <td>
+                                            <h6>0.001</h6>
+                                        </td>
+                                        <td>
+                                            <h6>1000</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="text-center">
+                                                <strong>
+                                            ٢٠١٩-٠٨-٢٠ <br> ٠٦:١٦:٢٥
+                                        </strong>
+                                            </h6>
+                                        </td>
+                                        <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-1"><i class="fas fa-list ml-1"></i>تفاصيل</button></td>
+                                    </tr>
+                                    <!-- 2 Col -->
+                                    <tr>
+                                        <th>
+                                            <h6>418547</h6>
+                                        </th>
+                                        <td>
+                                            <h6>مشاهدات وإنطباعات إنستقرام 1M فوري حصري</h6>
+                                        </td>
+                                        <td>
+                                            <h6><a href="https://www.instagram.com/p/Bz666wThwXM/?igshid=1kzeexo7u21ym" class="badge"><i class="fas fa-link ml-2"></i>لزيارة الرابط</a></h6>
+                                        </td>
+                                        <td>
+                                            <h6>مكتمل</h6>
+                                        </td>
+                                        <td>
+                                            <h6>0.03</h6>
+                                        </td>
+                                        <td>
+                                            <h6>1000</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="text-center">
+                                                <strong>
+                                                ٢٠١٩-٠٧-٢١<br> ١٧:١٤:٤٢
+                                        </strong>
+                                            </h6>
+                                        </td>
+                                        <td><button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#info-2"><i class="fas fa-list ml-1"></i>تفاصيل</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Modals For Table within Detials -->
+                        <div class="detials">
+                            <!-- Modal 1 -->
+                            <div class="modal fade" id="info-1" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
+                                <div class="modal-dialog e-width">
+                                    <div class="modal-content">
+                                        <div class="modal-header edit-bg">
+                                            <h6 class="modal-title" id="info-1Label">انستقرام [ مشاهدات ] [ خدمة حصرية ]</h6>
+                                            <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="content-all-box" style="overflow:hidden">
+                                                <div class="row no-gutters">
+                                                    <!-- 1- Element -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-list-ol text-white ml-1"></i>رقم الطلب</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">427825</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-calendar text-white ml-1"></i>التاريخ</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">٢٠١٩-٠٧-٢١ ١٧:١٤:٤٢
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 3- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-link text-white ml-1"></i>الرابط</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <small class="mb-0 p-2">
+                                                            <a href="https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz" class="badge">
+                                                                https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz
+                                                            </a>
+                                                        </small>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 4- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-dollar-sign text-white ml-1"></i>الثمن</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">0.001</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 5- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-box text-white ml-1"></i>العدد</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 6- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-chart-line text-white ml-1"></i>عدد البدء</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1007147</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 7- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-braille text-white ml-1"></i>المتبقي</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">+6814</h6>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 2 -->
+                            <div class="modal fade" id="info-2" data-backdrop="static" data-keyboard="false" aria-labelledby="info-1Label" aria-hidden="true">
+                                <div class="modal-dialog e-width">
+                                    <div class="modal-content">
+                                        <div class="modal-header edit-bg">
+                                            <h6 class="modal-title" id="info-1Label">مشاهدات وإنطباعات إنستقرام 1M فوري حصري</h6>
+                                            <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="content-all-box" style="overflow:hidden">
+                                                <div class="row no-gutters">
+                                                    <!-- 1- Element -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-list-ol text-white ml-1"></i>رقم الطلب</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">427825</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-calendar text-white ml-1"></i>التاريخ</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">٢٠١٩-٠٧-٢١ ١٧:١٤:٤٢
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 3- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-link text-white ml-1"></i>الرابط</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <small class="mb-0 p-2">
+                                                            <a href="https://www.instagram.com/p/Bz666wThwXM/?igshid=1kzeexo7u21ym" class="badge">
+                                                                https://www.instagram.com/p/Bz666wThwXM/?igshid=1kzeexo7u21ym
+                                                            </a>
+                                                        </small>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 4- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-dollar-sign text-white ml-1"></i>الثمن</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">0.001</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 5- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-box text-white ml-1"></i>العدد</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 6- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-chart-line text-white ml-1"></i>عدد البدء</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1007147</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 7- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-secondary mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-braille text-white ml-1"></i>المتبقي</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">+6814</h6>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 collapse -->
+                    <div class="collapse" id="prese-2">
+                        <div class="row">
+                            <!-- 1- Box -->
+                            <div class="col-md-6 mb-3">
+                                <div class="all-box border">
+                                    <div class="box-content">
+                                        <div class="box-header bg-dark rounded-top p-4">
+                                            <h6 class="modal-title text-center text-white">انستقرام [ مشاهدات ] [ خدمة حصرية ]</h6>
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="content-all-box" style="overflow:hidden">
+                                                <div class="row no-gutters">
+                                                    <!-- 1- Element -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-list-ol text-white ml-1"></i>رقم الطلب</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">427825</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-calendar text-white ml-1"></i>التاريخ</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">٢٠١٩-٠٧-٢١ ١٧:١٤:٤٢
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 3- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-link text-white ml-1"></i>الرابط</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">
+                                                                <a href="https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz" class="badge">
+                                                                https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz
+                                                            </a>
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 4- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-dollar-sign text-white ml-1"></i>الثمن</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">0.001</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 5- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-box text-white ml-1"></i>العدد</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 6- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-chart-line text-white ml-1"></i>عدد البدء</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1007147</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 7- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-braille text-white ml-1"></i>المتبقي</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">+6814</h6>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2- Box -->
+                            <div class="col-md-6 mb-3">
+                                <div class="all-box border">
+                                    <div class="box-content">
+                                        <div class="box-header bg-dark rounded-top p-4">
+                                            <h6 class="modal-title text-center text-white">انستقرام [ مشاهدات ] [ خدمة حصرية ]</h6>
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="content-all-box" style="overflow:hidden">
+                                                <div class="row no-gutters">
+                                                    <!-- 1- Element -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-list-ol text-white ml-1"></i>رقم الطلب</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">427825</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-calendar text-white ml-1"></i>التاريخ</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">٢٠١٩-٠٧-٢١ ١٧:١٤:٤٢
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 3- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-link text-white ml-1"></i>الرابط</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">
+                                                                <a href="https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz" class="badge">
+                                                                https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz
+                                                            </a>
+                                                                </smal>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 4- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-dollar-sign text-white ml-1"></i>الثمن</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">0.001</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 5- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-box text-white ml-1"></i>العدد</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 6- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-chart-line text-white ml-1"></i>عدد البدء</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1007147</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 7- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-braille text-white ml-1"></i>المتبقي</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">+6814</h6>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3- Box -->
+                            <div class="col-md-6 mb-3">
+                                <div class="all-box border">
+                                    <div class="box-content">
+                                        <div class="box-header bg-dark rounded-top p-4">
+                                            <h6 class="modal-title text-center text-white">انستقرام [ مشاهدات ] [ خدمة حصرية ]</h6>
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="content-all-box" style="overflow:hidden">
+                                                <div class="row no-gutters">
+                                                    <!-- 1- Element -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-list-ol text-white ml-1"></i>رقم الطلب</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">427825</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-calendar text-white ml-1"></i>التاريخ</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">٢٠١٩-٠٧-٢١ ١٧:١٤:٤٢
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 3- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-link text-white ml-1"></i>الرابط</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">
+                                                                <a href="https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz" class="badge">
+                                                                https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz
+                                                            </a>
+                                                                </smal>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 4- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-dollar-sign text-white ml-1"></i>الثمن</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">0.001</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 5- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-box text-white ml-1"></i>العدد</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 6- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-chart-line text-white ml-1"></i>عدد البدء</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1007147</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 7- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-braille text-white ml-1"></i>المتبقي</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">+6814</h6>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4- Box -->
+                            <div class="col-md-6 mb-3">
+                                <div class="all-box border">
+                                    <div class="box-content">
+                                        <div class="box-header bg-dark rounded-top p-4">
+                                            <h6 class="modal-title text-center text-white">انستقرام [ مشاهدات ] [ خدمة حصرية ]</h6>
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="content-all-box" style="overflow:hidden">
+                                                <div class="row no-gutters">
+                                                    <!-- 1- Element -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-list-ol text-white ml-1"></i>رقم الطلب</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">427825</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-calendar text-white ml-1"></i>التاريخ</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">٢٠١٩-٠٧-٢١ ١٧:١٤:٤٢
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 3- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-link text-white ml-1"></i>الرابط</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2">
+                                                                <a href="https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz" class="badge">
+                                                                https://www.instagram.com/p/B011849Bxc9/?igshid=11pcspwzlz7sz
+                                                            </a>
+                                                                </smal>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 4- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-dollar-sign text-white ml-1"></i>الثمن</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">0.001</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 5- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-box text-white ml-1"></i>العدد</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 6- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-chart-line text-white ml-1"></i>عدد البدء</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">1007147</h6>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 7- Element  -->
+                                                    <div class="col-3 f-bx">
+                                                        <div class="right">
+                                                            <h6 class="bg-dark mb-0 text-white  d-inline-block" style="width: 100%;padding: 10px;"><i class="fas fa-braille text-white ml-1"></i>المتبقي</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9 f-bx">
+                                                        <div class="left p-0">
+                                                            <h6 class="mb-0 p-2 badge badge-info text-white mr-2">+6814</h6>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
