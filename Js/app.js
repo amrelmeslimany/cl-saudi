@@ -14,6 +14,7 @@ $(document).ready(() => {
         collapse_buttons_funds_2 = $(".techinical-sup .tech-box  .button-present button"),
         collapse_buttons_funds_3 = $(".history-orders .list-of-orders  .buttons-list button"),
         collapse_boxes_funds_3 = $(".history-orders .list-of-orders .collection-collapse .collapse"),
+        history_links_table = $(".history-orders .list-of-orders .collection-collapse table tbody h6 a"),
         form_support_select = $(".techinical-sup .form-support #subject"),
         form_support_select_order = $(".techinical-sup .form-support .order"),
         form_support_select_payment = $(".techinical-sup .form-support .payment"),
@@ -220,7 +221,6 @@ $(document).ready(() => {
     });
     /* Input Message For opinion */
     news_inputs_opinion.each(function() {
-
         $(this).on("keyup", (e) => {
             e.stopPropagation();
             if ($(this).val() !== "") {
@@ -240,5 +240,11 @@ $(document).ready(() => {
                 }
             });
         });
+    });
+    // Shourtcut links
+    history_links_table.each(function() {
+        let txt = $(this).attr("href"),
+            af_slice = txt.slice(0, 30);
+        $(this).html(`<i class="fas fa-link ml-2 border p-1"></i>...${af_slice}`)
     });
 });
